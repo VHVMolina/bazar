@@ -26,11 +26,11 @@ export default function RootLayout({
 
   return (
     <html lang="en" className=" flex justify-center">
-      <body className={`${inter.className} max-w-80`}>
-        <ProductsContext.Provider value={{ productsInfo, setProductsInfo , productInfo, setProductInfo}}>
-          {children}
-        </ProductsContext.Provider>
-      </body>
+      <ProductsContext.Provider
+        value={{ productsInfo, setProductsInfo, productInfo, setProductInfo }}
+      >
+        <body className={`${inter.className} max-w-80`}>{children}</body>
+      </ProductsContext.Provider>
     </html>
   );
 }
