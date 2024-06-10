@@ -1,4 +1,4 @@
-import { ProductsContext } from "@/app/layout";
+import { ProductsContext } from '@/ProductContext/productContext'
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import { useContext } from "react";
