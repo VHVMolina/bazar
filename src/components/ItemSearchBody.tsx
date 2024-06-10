@@ -3,7 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { ProductCard } from "./ProductCard";
 import { useContext } from "react";
-import { ProductsContext } from "@/app/layout";
+import { ProductsContext } from "@/ProductContext/productContext"; 
 import { useHandleSearch } from "@/hooks/useHandleNullSearch";
 
 export const ItemSearchBody = () => {

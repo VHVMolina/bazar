@@ -1,6 +1,6 @@
 'use client';
 
-import { ProductsContext } from "@/app/layout";
+import { ProductsContext } from "@/ProductContext/productContext"; 
 import { ItemSearchNav } from "@/components/ItemSearchNav";
 import { useHandleProduct } from "@/hooks/useHandleNullItem";
 import imageGoesHere from "@/images/imageGoesHere.webp";
