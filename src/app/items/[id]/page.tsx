@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { ProductsContext } from "@/app/layout";
 import { ItemSearchNav } from "@/components/ItemSearchNav";

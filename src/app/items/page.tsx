@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { ItemSearchNav } from "@/components/ItemSearchNav";
 import { ItemSearchBody } from "@/components/ItemSearchBody";
