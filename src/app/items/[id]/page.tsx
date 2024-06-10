@@ -19,7 +19,7 @@ export default function ProductItem() {
 
   let { productInfo } = context;
   let { title, brand, price, rating, stock } = productInfo[0];
-  let { category, discountPercentage, productDescription } = productInfo[0];
+  let { discountPercentage, productDescription } = productInfo[0];
 
   let priceWithDiscount = price - (discountPercentage / 100) * price
   return (

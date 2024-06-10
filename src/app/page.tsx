@@ -35,11 +35,10 @@ export default function Home() {
           }
         />
         <button
-          onClick={() =>
+          onClick={(ev) =>
             searchProduct({
               product: product.current!.value,
-            })
-          }
+            })}
           className="hover:bg-gray-200 active:bg-gray-300 py-2 px-4 outline-none rounded-2xl border-[2px] border-gray-400 border-opacity-70 flex items-center gap-x-2"
         >
           Search <IoSearchOutline className="h-5 w-5" />

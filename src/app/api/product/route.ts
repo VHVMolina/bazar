@@ -1,14 +1,23 @@
-import { SingleProduct } from "@/interfaces/interfaces";
-import { db } from "@/lib/db";
+import { supabase } from "@/lib/supabase";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
     let { id } = await req.json();
 
-    let sql = `SELECT title, productDescription, price, rating , stock, brand, category, discountPercentage FROM storeProducts `
-    let whereSentence = `WHERE id = "${id}"`
-    let response : SingleProduct[] = await db.query(`${sql}${whereSentence}`);
-    return NextResponse.json({products: response}, {
+    let { data: storeProducts, error } = await supabase
+        .from('storeProducts')
+        .select('title, productDescription, price, rating, discountPercentage, brand, stock')
+        .eq('id', id)
+        
+
+    if (error) {
+        return NextResponse.json({ error }, {
+            status: 400,
+            statusText: "An error has been occured"
+        })
+    }
+
+    return NextResponse.json({ products: storeProducts }, {
         status: 200,
         statusText: "Search completed"
     })

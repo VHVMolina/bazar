@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Dispatch, SetStateAction, createContext, useState } from "react";
 import { ProductInfo, SingleProduct } from "@/interfaces/interfaces";
-import { useHandleNullSearch } from "@/hooks/useHandleNullSearch";
 
 interface Props {
   productsInfo: ProductInfo[] | null;

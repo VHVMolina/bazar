@@ -16,7 +16,7 @@ export const ItemSearchBody = () => {
   }
 
   let { productsInfo } = store;
-
+  console.log(productsInfo)
   return (
     <>
       <article className="flex flex-col gap-y-2">
