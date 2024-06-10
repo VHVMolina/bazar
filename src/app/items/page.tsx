@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
 import { ItemSearchNav } from "@/components/ItemSearchNav";
 import { ItemSearchBody } from "@/components/ItemSearchBody";
+import { Suspense } from "react";
 
 export default function ItemSearch() {
   return (
@@ -10,7 +11,9 @@ export default function ItemSearch() {
         <ItemSearchNav />
       </section>
       <section className="flex flex-col gap-y-6">
-        <ItemSearchBody />
+        <Suspense fallback={<div>Cargando...</div>}>
+          <ItemSearchBody />
+        </Suspense>
       </section>
     </main>
   );
