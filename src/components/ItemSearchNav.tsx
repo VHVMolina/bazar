@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import cartoonCar from "@/images/cartoon-car.webp";
 import { IoSearchOutline } from "react-icons/io5";

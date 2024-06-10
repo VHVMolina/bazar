@@ -1,3 +1,5 @@
+'use client';
+
 import { useShowProductCard } from "@/hooks/useShowProductInfo";
 import imageGoesHere from "@/images/imageGoesHere.webp";
 import { Rating } from "@mui/material";

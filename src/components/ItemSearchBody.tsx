@@ -1,3 +1,5 @@
+'use client';
+
 import { useSearchParams } from "next/navigation";
 import { ProductCard } from "./ProductCard";
 import { useContext } from "react";
