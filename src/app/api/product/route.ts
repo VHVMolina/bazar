@@ -19,6 +19,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ products: storeProducts }, {
         status: 200,
-        statusText: "Search completed"
+        statusText: "Search successfully completed"
     })
 }
