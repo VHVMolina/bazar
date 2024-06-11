@@ -6,7 +6,7 @@ import { Suspense } from "react";
 
 export default function ItemSearch() {
   return (
-    <main className="py-6 px-6 bg-gray-100 flex flex-col gap-y-3">
+    <main className="p-8 bg-white flex flex-col gap-y-3 max-w-screen-lg justify-center w-screen min-[400px]:w-11/12 min-[500px]:w-10/12 ">
       <section>
         <ItemSearchNav />
       </section>

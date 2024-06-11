@@ -6,7 +6,7 @@ export async function POST(req: Request) {
     if (!search) {
         let { data: storeProducts, error } = await supabase
             .from('storeProducts')
-            .select('id,title, productDescription, price, rating');
+            .select('id,title,price,discountPercentage,rating');
 
         if (error) {
             return NextResponse.json({ error }, {
@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     }
     let { data: storeProducts, error } = await supabase
         .from('storeProducts')
-        .select('id,title,productDescription,price,rating')
+        .select('id,title,discountPercentage,price,rating')
         .or(`title.ilike.%${search}%,productDescription.ilike.%${search}%,category.ilike.%${search}%`);
 
     if (error) {

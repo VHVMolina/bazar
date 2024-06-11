@@ -17,11 +17,11 @@ export default function RootLayout({
   let [productInfo, setProductInfo] = useState<SingleProduct[] | null>(null);
 
   return (
-    <html lang="en" className="bg-black flex justify-center">
+    <html lang="en">
       <ProductsContext.Provider
         value={{ productsInfo, setProductsInfo, productInfo, setProductInfo }}
       >
-        <body className={`${inter.className} max-w-80`}>{children}</body>
+        <body className={`${inter.className} flex justify-center bg-black`}>{children}</body>
       </ProductsContext.Provider>
     </html>
   );

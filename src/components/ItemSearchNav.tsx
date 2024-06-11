@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import cartoonCar from "@/images/cartoon-car.webp";
+import cartoonCar from "@/images/cartoon-car-2.webp";
 import { IoSearchOutline } from "react-icons/io5";
 import { useRef } from "react";
 import { useSearchProduct } from "@/hooks/useSearchProducts";
