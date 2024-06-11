@@ -26,7 +26,7 @@ export const ItemSearchBody = () => {
           Results of search "{search}": {productsInfo.length}
         </h1>
       </article>
-      <article className="flex flex-col gap-y-[2px]">
+      <article className="flex flex-col gap-y-[3px]">
         {productsInfo &&
           productsInfo.map((product) => (
             <ProductCard {...product} key={product.title} />

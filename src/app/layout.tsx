@@ -21,7 +21,7 @@ export default function RootLayout({
       <ProductsContext.Provider
         value={{ productsInfo, setProductsInfo, productInfo, setProductInfo }}
       >
-        <body className={`${inter.className} flex justify-center bg-black`}>{children}</body>
+        <body className={`${inter.className} flex justify-center`}>{children}</body>
       </ProductsContext.Provider>
     </html>
   );

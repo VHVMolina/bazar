@@ -6,14 +6,16 @@ import { Suspense } from "react";
 
 export default function ItemSearch() {
   return (
-    <main className="px-2 py-4 bg-white flex flex-col gap-y-3 max-w-screen-lg justify-center w-screen min-[400px]:w-11/12 min-[500px]:w-10/12 min-[400px]:p-4 min-[500px]:p-8">
-      <section>
-        <ItemSearchNav />
-      </section>
-      <section className="flex flex-col gap-y-6">
-        <Suspense fallback={<div>Cargando...</div>}>
-          <ItemSearchBody />
-        </Suspense>
+    <main className="bg-gray-100 w-screen flex justify-center bg-opacity-90">
+      <section className="px-4 py-8 bg-white flex flex-col gap-y-3 max-w-screen-lg justify-center w-screen min-[500px]:px-6 sm:px-8 md:px-10">
+        <article>
+          <ItemSearchNav />
+        </article>
+        <article className="flex flex-col gap-y-6">
+          <Suspense fallback={<div>Cargando...</div>}>
+            <ItemSearchBody />
+          </Suspense>
+        </article>
       </section>
     </main>
   );

@@ -13,7 +13,7 @@ export default function Home() {
   let { searchProduct } = useSearchProduct();
 
   return (
-    <main className="flex justify-center bg-black">
+    <main className="flex justify-center bg-black w-screen">
       <section className="flex min-h-screen flex-col items-center p-24 max-w-80 bg-white bg-opacity-[0.14]">
         <div className="bg-white shadow-2xl shadow-gray-400 flex flex-col items-center p-8 sm:p-14 gap-y-3 w-max rounded-xl">
           <div className="bg-slate-800 rounded-full">
