@@ -17,7 +17,7 @@ export default function RootLayout({
   let [productInfo, setProductInfo] = useState<SingleProduct[] | null>(null);
 
   return (
-    <html lang="en" className=" flex justify-center">
+    <html lang="en" className="bg-black flex justify-center">
       <ProductsContext.Provider
         value={{ productsInfo, setProductsInfo, productInfo, setProductInfo }}
       >
