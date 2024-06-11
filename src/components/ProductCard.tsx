@@ -39,7 +39,7 @@ export const ProductCard = (productInfo: Props) => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-y-3">
-          <h3 className="font-bold flex items-center gap-x-3 text-xl">{priceWithDiscount} $ <small className="text-green-700 text-sm">%{discountPercentage} OFF</small></h3>
+          <h3 className="font-bold flex items-center gap-x-3 text-xl flex-wrap">{priceWithDiscount} $ <small className="text-green-700 text-sm">{discountPercentage}% OFF</small></h3>
           <Rating
             name="read-only"
             value={rating}
