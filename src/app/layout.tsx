@@ -22,7 +22,7 @@ export default function RootLayout({
         value={{ productsInfo, setProductsInfo, productInfo, setProductInfo }}
       >
         <body
-          className={`${inter.className} flex max-w-screen-xl items-center justify-center`}
+          className={`${inter.className} flex items-center justify-center`}
         >
           {children}
         </body>

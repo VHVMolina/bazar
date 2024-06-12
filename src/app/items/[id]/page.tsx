@@ -23,7 +23,7 @@ export default function ProductItem() {
 
   let discountPrice = (price - (discountPercentage / 100) * price).toFixed(2);
   return (
-    <main className="flex min-h-screen flex-col gap-y-3 bg-white px-6 py-6">
+    <main className="flex min-h-screen flex-col gap-y-3 bg-white px-6 py-6 max-w-screen-xl">
       <section>
         <ItemSearchNav />
       </section>
