@@ -23,7 +23,7 @@ export const ItemSearchNav = () => {
         priority
         onClick={() => navigate.push("/")}
       />
-      <div className="flex gap-x-4 items-center w-full border-[2px] border-gray-400 border-opacity-70 py-2 px-4">
+      <div className="rounded-lg flex gap-x-4 items-center w-full border-[2px] border-gray-400 border-opacity-70 py-2 px-4">
         <input
           type="text"
           className="outline-none rounded-md w-full py-1"

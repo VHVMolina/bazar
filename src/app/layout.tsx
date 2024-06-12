@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,11 +17,15 @@ export default function RootLayout({
   let [productInfo, setProductInfo] = useState<SingleProduct[] | null>(null);
 
   return (
-    <html lang="en">
+    <html lang="en" className="w-full flex justify-center">
       <ProductsContext.Provider
         value={{ productsInfo, setProductsInfo, productInfo, setProductInfo }}
       >
-        <body className={`${inter.className} flex justify-center`}>{children}</body>
+        <body
+          className={`${inter.className} flex max-w-screen-xl items-center justify-center`}
+        >
+          {children}
+        </body>
       </ProductsContext.Provider>
     </html>
   );
